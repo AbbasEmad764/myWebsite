@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("/course/imgs/codeLove.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.learnMore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.learnMore p {
+    color: white;
+    font-size: 19px;
+    font-weight: 600px;
+}
+
+.learnMore .btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 80px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.logo i {
+    color: orange;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+    list-style: none;
+}
+
+nav ul a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: rgba(255, 255, 255, 0.644);
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+nav ul a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: 1s ease;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+nav ul .active {
+    color: white;
+}
+
+.sticky {
+    background: white;
+    transition: 1s ease;
+}
+
+.sticky .logo,
+.sticky ul a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.sticky .active {
+    color: black;
+}
+
+.sticky a:hover {
+    color: black;
+}
+
+.learnMore {
+    padding: 1rem;
+}
+
+.about {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-content p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.courses {
+    text-align: center;
+}
+
+.courses h1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.courses p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.courses-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+}
+
+.courses-container .icon-sec {
+    text-align: center;
+}
+
+.courses-container p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    background: whitesmoke;
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+.desc-text {
+    text-align: center;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.content,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.contact {
+    background: whitesmoke;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.contact-container form {
+    width: 50%;
+    height: 100%;
+    background: white;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-container aside {
+    height: 100%;
+    padding: 1rem;
+    margin: 1em;
+    background: white;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+form textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer-container .mediaLinks h4,
+.footer-container .lessons h4,
+.footer-container .services h4 {
+    text-align: center;
+}
+
+.footer-container .mediaLinks ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-container .mediaLinks ul li {
+    margin: 16px;
+}
+
+.footer-container .mediaLinks i:hover {
+    transform: scale(0.7);
+    transition: 1s ease;
+}
+
+.footer-container .lessons ul,
+.footer-container .services ul {
+    list-style: none;
+}
+
+.footer-container .lessons ul li,
+.footer-container .services ul li {
+    padding: 5px;
+}
+
+.footer-container .lessons ul li a,
+.footer-container .services ul li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+}
+
+.footer-container .lessons a:after,
+.footer-container .services a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: orange;
+    height: 2px;
+    width: 0;
+    transition: 1s ease;
+}
+
+.footer-container .lessons a:hover:after,
+.footer-container .services a:hover::after {
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    height: 70px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mediaLinks a {
+    color: black;
+}
+
+.mediaLinks a:hover {
+    color: darkslategray;
+}
+
+@media screen and (max-width: 468px) {
+    .logo {
+        font-size: 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        margin-bottom: 16px;
+        padding: 5px;
+    }
+    nav a {
+        font-size: 10px;
+    }
+    .learnMore {
+        padding: 1rem;
+    }
+    .about-content {
+        padding: 1rem;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-container form {
+        width: 100%;
+    }
+    .contact-container .side {
+        height: 85%;
+    }
+    .contact-container input {
+        width: 100%;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (width: 280px) {
+    nav a {
+        font-size: 6px;
+    }
+}
