@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <label class="logo">CodeRAQ <i class="fa fa-fire fa-2x"></i></label>
+        <ul>
+            <li><a href="/index.html" target="_blank">الصفحة الرئيسية</a></li>
+            <li><a href="/about.html" target="_blank">حول</a></li>
+            <li><a href="/services_pages/fullpageservices/index.html" target="_blank">خدمات</a></li>
+            <li><a href="/contact.html" class="active" target="_blank">اتصل</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <section class="contact-container">
+            <form class=" g-3 needs-validation" novalidate action="https://formspree.io/f/xbjqwgqn" method="POST">
+                <h2>تعرف علي</h2>
+                <section>
+                    <label for="validationCustom01" class="form-label">الاسم بالكامل</label>
+                    <input type="text" name="name" class="form-control" id="validationCustom01" required>
+                    <p class="invalid-feedback">
+                        الرجاء إضافة اسمك الكامل
+                    </p>
+                </section>
+                <section>
+                    <label for="validationCustom02">البريد الإلكتروني</label>
+                    <input type="email" name="email" class="form-control" id="validationCustom02" required>
+                    <p class="invalid-feedback">
+                        الرجاء إضافة البريد الإلكتروني الخاص بك
+                    </p>
+                </section>
+                <section>
+                    <section>
+                        <label for="validationCustom05">رقم الهاتف:</label>
+                        <input type="text" name="phone" class="form-control" id="validationCustom05" required>
+                        <p class="invalid-feedback">
+                            الرجاء إضافة رقم هاتفك
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <label for="message">رسالة</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="ارسل لي رسالة"></textarea>
+                </section>
+                <section>
+                    <button class="btn btn-dark"><i class="fab fa-telegram-plane"></i> إرسال</button>
+                </section>
+            </form>
+            <aside class="side">
+                <address>
+                        <h3>عنوان</h3>
+                        <p>بغداد في منطقة الغزالية</p>
+                    </address>
+                <section>
+                    <h3>الهاتف</h3>
+                    <p>+9647828100552</p>
+                </section>
+                <section>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>kjf36zv@gmail.com</p>
+                </section>
+            </aside>
+        </section>
+    </section>
+    <script src="/script.js"></script>
+    <script src="/formserver.js"></script>
+</body>
+
+</html>
